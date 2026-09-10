@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tierly — Pricing that scales with you</title>
+<meta name="description" content="Tierly — simple, transparent pricing for makers and teams. Switch monthly or yearly and watch the savings land instantly.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#" aria-label="Tierly home">tier<span>ly</span></a>
+    <nav aria-label="Primary">
+      <a href="#plans" class="nav-link">Plans</a>
+      <a href="#guarantee" class="nav-link">Why Tierly</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Simple, honest pricing</p>
+      <h1><span class="gradient-text">Pricing</span> that scales<br>with your ambition</h1>
+      <p class="sub">No hidden fees. No surprise invoices. Plans that grow when you do — switch or cancel anytime.</p>
+
+      <div class="toggle-wrap">
+        <span id="label-monthly" class="toggle-label is-active">Monthly</span>
+        <button class="toggle" id="billing-toggle" role="switch" aria-checked="false" aria-label="Switch to yearly billing">
+          <span class="knob" aria-hidden="true"></span>
+        </button>
+        <span id="label-yearly" class="toggle-label">Yearly <em class="save-pill">save 20%</em></span>
+      </div>
+    </section>
+
+    <section class="plans" id="plans" aria-label="Pricing plans">
+      <article class="plan glass" aria-label="Starter plan">
+        <h2 class="plan-name">Starter</h2>
+        <p class="plan-tagline">For solo makers finding their rhythm.</p>
+        <p class="price" data-monthly="9" data-yearly="7" aria-live="polite"><span class="currency">$</span><span class="amount">9</span><span class="period">/mo</span></p>
+        <p class="bill-note" data-monthly-note="Billed monthly" data-yearly-note="Billed $84 yearly">Billed monthly</p>
+        <ul class="features">
+          <li>3 active projects</li>
+          <li>Community support</li>
+          <li>1 GB asset storage</li>
+          <li>Basic analytics</li>
+        </ul>
+        <a href="#" class="btn btn-ghost" aria-label="Start with the Starter plan">Start free</a>
+      </article>
+
+      <article class="plan glass plan-popular" aria-label="Pro plan, most popular">
+        <span class="pop-badge">Most popular</span>
+        <h2 class="plan-name">Pro</h2>
+        <p class="plan-tagline">For professionals shipping every week.</p>
+        <p class="price" data-monthly="24" data-yearly="19" aria-live="polite"><span class="currency">$</span><span class="amount">24</span><span class="period">/mo</span></p>
+        <p class="bill-note" data-monthly-note="Billed monthly" data-yearly-note="Billed $228 yearly">Billed monthly</p>
+        <ul class="features">
+          <li>Unlimited projects</li>
+          <li>Priority support</li>
+          <li>50 GB asset storage</li>
+          <li>Advanced analytics</li>
+          <li>Custom domains</li>
+        </ul>
+        <a href="#" class="btn btn-primary" aria-label="Start with the Pro plan">Go Pro</a>
+      </article>
+
+      <article class="plan glass" aria-label="Studio plan">
+        <h2 class="plan-name">Studio</h2>
+        <p class="plan-tagline">For teams that move as one.</p>
+        <p class="price" data-monthly="59" data-yearly="47" aria-live="polite"><span class="currency">$</span><span class="amount">59</span><span class="period">/mo</span></p>
+        <p class="bill-note" data-monthly-note="Billed monthly" data-yearly-note="Billed $564 yearly">Billed monthly</p>
+        <ul class="features">
+          <li>Everything in Pro</li>
+          <li>10 team seats included</li>
+          <li>250 GB asset storage</li>
+          <li>SSO and audit logs</li>
+          <li>Dedicated success manager</li>
+        </ul>
+        <a href="#" class="btn btn-ghost" aria-label="Start with the Studio plan">Talk to us</a>
+      </article>
+    </section>
+
+    <section class="guarantee" id="guarantee" aria-label="Our guarantee">
+      <div class="g-item glass">
+        <span class="g-icon" aria-hidden="true">↺</span>
+        <h3>Cancel anytime</h3>
+        <p>One click in settings. No retention calls, no guilt trips.</p>
+      </div>
+      <div class="g-item glass">
+        <span class="g-icon" aria-hidden="true">◈</span>
+        <h3>30-day refund</h3>
+        <p>Not feeling it? Full refund within 30 days, no questions.</p>
+      </div>
+      <div class="g-item glass">
+        <span class="g-icon" aria-hidden="true">⚡</span>
+        <h3>Price-lock promise</h3>
+        <p>Your rate never rises while you stay subscribed.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built with vanilla HTML, CSS &amp; JavaScript — part of a daily build series.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
